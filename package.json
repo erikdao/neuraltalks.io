@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "html5-boilerplate": "^6.1.0"
+  },
+  "name": "neuraltalks.io",
+  "version": "1.0.0",
+  "description": "Source code for neuraltalks static blog",
+  "main": "index.js",
+  "repository": "git@erikdao:erikdao/neuraltalks.io.git",
+  "author": "erikdao <erikddao@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6",
+    "npm": ">=3"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-header": "^2.0.5",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "mocha": "^5.2.0",
+    "modernizr": "^3.6.0",
+    "run-sequence": "^2.2.1"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp archive && mocha --require babel-core/register --reporter spec --timeout 5000"
+  }
+}
